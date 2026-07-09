@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 80" width="280" height="80" role="img" aria-label="Shala Yoga logo">
+  <!-- Lotus flower icon -->
+  <g transform="translate(10, 40)">
+    <!-- Central petal -->
+    <ellipse cx="30" cy="0" rx="8" ry="18" fill="#a8c5a0" opacity="0.85" transform="rotate(-90, 30, 0)"/>
+    <!-- Left petals -->
+    <ellipse cx="30" cy="-8" rx="6" ry="16" fill="#b5ccb5" opacity="0.75" transform="rotate(-135, 30, -8)"/>
+    <ellipse cx="30" cy="-14" rx="5" ry="13" fill="#c8d8c8" opacity="0.65" transform="rotate(-160, 30, -14)"/>
+    <!-- Right petals -->
+    <ellipse cx="30" cy="8" rx="6" ry="16" fill="#b5ccb5" opacity="0.75" transform="rotate(-45, 30, 8)"/>
+    <ellipse cx="30" cy="14" rx="5" ry="13" fill="#c8d8c8" opacity="0.65" transform="rotate(-20, 30, 14)"/>
+    <!-- Center dot -->
+    <circle cx="30" cy="0" r="4" fill="#7a9e7e"/>
+  </g>
+  <!-- Studio name -->
+  <text x="75" y="32" font-family="Georgia, 'Times New Roman', serif" font-size="22" font-weight="400" fill="#4a6741" letter-spacing="3">SHALA</text>
+  <text x="75" y="58" font-family="Georgia, 'Times New Roman', serif" font-size="22" font-weight="400" fill="#4a6741" letter-spacing="3">YOGA</text>
+  <!-- Decorative line -->
+  <line x1="75" y1="38" x2="245" y2="38" stroke="#a8c5a0" stroke-width="0.8" opacity="0.6"/>
+</svg>
