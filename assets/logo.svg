@@ -1,20 +1,62 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 80" width="280" height="80" role="img" aria-label="Shala Yoga logo">
-  <!-- Lotus flower icon -->
-  <g transform="translate(10, 40)">
-    <!-- Central petal -->
-    <ellipse cx="30" cy="0" rx="8" ry="18" fill="#a8c5a0" opacity="0.85" transform="rotate(-90, 30, 0)"/>
-    <!-- Left petals -->
-    <ellipse cx="30" cy="-8" rx="6" ry="16" fill="#b5ccb5" opacity="0.75" transform="rotate(-135, 30, -8)"/>
-    <ellipse cx="30" cy="-14" rx="5" ry="13" fill="#c8d8c8" opacity="0.65" transform="rotate(-160, 30, -14)"/>
-    <!-- Right petals -->
-    <ellipse cx="30" cy="8" rx="6" ry="16" fill="#b5ccb5" opacity="0.75" transform="rotate(-45, 30, 8)"/>
-    <ellipse cx="30" cy="14" rx="5" ry="13" fill="#c8d8c8" opacity="0.65" transform="rotate(-20, 30, 14)"/>
-    <!-- Center dot -->
-    <circle cx="30" cy="0" r="4" fill="#7a9e7e"/>
+<svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Shala Yoga flower logo</title>
+  <desc id="desc">Pastel flower logo in fuchsia and white tones for Studio Shala Yoga.</desc>
+  <defs>
+    <radialGradient id="bgGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(120 120) rotate(90) scale(120)">
+      <stop offset="0" stop-color="#FFF9FC"/>
+      <stop offset="1" stop-color="#F6EAF2"/>
+    </radialGradient>
+    <linearGradient id="petalSoft" x1="120" y1="38" x2="120" y2="202" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFDFE"/>
+      <stop offset="0.45" stop-color="#F8E5EF"/>
+      <stop offset="1" stop-color="#D61C72"/>
+    </linearGradient>
+    <linearGradient id="petalAlt" x1="120" y1="44" x2="120" y2="196" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="0.4" stop-color="#F4D8E7"/>
+      <stop offset="1" stop-color="#C10F63"/>
+    </linearGradient>
+    <linearGradient id="petalInner" x1="120" y1="70" x2="120" y2="170" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFDFD"/>
+      <stop offset="0.55" stop-color="#FAEAF2"/>
+      <stop offset="1" stop-color="#E78BB8"/>
+    </linearGradient>
+    <filter id="softShadow" x="16" y="16" width="208" height="208" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#C35C8E" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <circle cx="120" cy="120" r="108" fill="url(#bgGlow)"/>
+
+  <g filter="url(#softShadow)">
+    <g opacity="0.94">
+      <ellipse cx="120" cy="78" rx="19" ry="52" transform="rotate(0 120 78)" fill="url(#petalSoft)"/>
+      <ellipse cx="91" cy="88" rx="18" ry="50" transform="rotate(-32 91 88)" fill="url(#petalAlt)"/>
+      <ellipse cx="149" cy="88" rx="18" ry="50" transform="rotate(32 149 88)" fill="url(#petalAlt)"/>
+      <ellipse cx="72" cy="112" rx="18" ry="48" transform="rotate(-62 72 112)" fill="url(#petalSoft)"/>
+      <ellipse cx="168" cy="112" rx="18" ry="48" transform="rotate(62 168 112)" fill="url(#petalSoft)"/>
+      <ellipse cx="65" cy="145" rx="18" ry="46" transform="rotate(-88 65 145)" fill="url(#petalAlt)"/>
+      <ellipse cx="175" cy="145" rx="18" ry="46" transform="rotate(88 175 145)" fill="url(#petalAlt)"/>
+      <ellipse cx="82" cy="172" rx="18" ry="46" transform="rotate(-122 82 172)" fill="url(#petalSoft)"/>
+      <ellipse cx="158" cy="172" rx="18" ry="46" transform="rotate(122 158 172)" fill="url(#petalSoft)"/>
+      <ellipse cx="106" cy="184" rx="17" ry="42" transform="rotate(-156 106 184)" fill="url(#petalAlt)"/>
+      <ellipse cx="134" cy="184" rx="17" ry="42" transform="rotate(156 134 184)" fill="url(#petalAlt)"/>
+    </g>
+
+    <g opacity="0.98">
+      <ellipse cx="120" cy="95" rx="16" ry="40" fill="url(#petalInner)"/>
+      <ellipse cx="100" cy="102" rx="15" ry="38" transform="rotate(-24 100 102)" fill="#FFF7FB"/>
+      <ellipse cx="140" cy="102" rx="15" ry="38" transform="rotate(24 140 102)" fill="#FFF7FB"/>
+      <ellipse cx="88" cy="122" rx="15" ry="36" transform="rotate(-48 88 122)" fill="url(#petalInner)"/>
+      <ellipse cx="152" cy="122" rx="15" ry="36" transform="rotate(48 152 122)" fill="url(#petalInner)"/>
+      <ellipse cx="89" cy="147" rx="14" ry="34" transform="rotate(-74 89 147)" fill="#FCECF4"/>
+      <ellipse cx="151" cy="147" rx="14" ry="34" transform="rotate(74 151 147)" fill="#FCECF4"/>
+      <ellipse cx="103" cy="164" rx="14" ry="31" transform="rotate(-112 103 164)" fill="url(#petalInner)"/>
+      <ellipse cx="137" cy="164" rx="14" ry="31" transform="rotate(112 137 164)" fill="url(#petalInner)"/>
+      <ellipse cx="120" cy="152" rx="14" ry="30" fill="#FFFDFE"/>
+    </g>
+
+    <circle cx="120" cy="130" r="15" fill="#FFF8FB"/>
+    <circle cx="120" cy="130" r="7" fill="#E978A9" opacity="0.55"/>
   </g>
-  <!-- Studio name -->
-  <text x="75" y="32" font-family="Georgia, 'Times New Roman', serif" font-size="22" font-weight="400" fill="#4a6741" letter-spacing="3">SHALA</text>
-  <text x="75" y="58" font-family="Georgia, 'Times New Roman', serif" font-size="22" font-weight="400" fill="#4a6741" letter-spacing="3">YOGA</text>
-  <!-- Decorative line -->
-  <line x1="75" y1="38" x2="245" y2="38" stroke="#a8c5a0" stroke-width="0.8" opacity="0.6"/>
 </svg>
