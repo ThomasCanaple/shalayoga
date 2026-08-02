@@ -879,7 +879,8 @@
       background-color: rgba(122, 158, 126, 0.15);
       color: var(--color-sage-dark);
       font-size: 1.4rem;
-      margin-bottom: 1rem;
+      margin-bottom: 0;
+      flex-shrink: 0;
     }
 
     .location-card__icon--warm {
@@ -887,11 +888,18 @@
       color: var(--color-warm-dark);
     }
 
+    .location-card__header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+
     .location-card__title {
       font-family: var(--font-serif);
       font-size: 1.2rem;
       color: var(--color-sage-dark);
-      margin-bottom: 0.75rem;
+      margin-bottom: 0;
     }
 
     .location-card__text {
@@ -899,73 +907,7 @@
       color: var(--color-text-light);
       line-height: 1.7;
       max-width: 42ch;
-    }
-
-    /* =====================================================
-       DOCUMENTS SECTION
-    ===================================================== */
-    .documents__grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-      gap: 1.5rem;
-      margin-top: 1rem;
-    }
-
-    .doc-card {
-      background: var(--color-white);
-      border-radius: var(--radius-lg);
-      padding: 2rem;
-      box-shadow: var(--shadow-sm);
-      border: 1px solid var(--color-border);
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      transition: transform var(--transition), box-shadow var(--transition);
-    }
-
-    .doc-card:hover {
-      transform: translateY(-3px);
-      box-shadow: var(--shadow-md);
-    }
-
-    .doc-card__top {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-    }
-
-    .doc-card__file-icon {
-      width: 52px;
-      height: 52px;
-      border-radius: var(--radius);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.5rem;
-      background-color: rgba(201, 168, 124, 0.15);
-      border: 1px solid rgba(201, 168, 124, 0.3);
-      flex-shrink: 0;
-    }
-
-    .doc-card__title {
-      font-family: var(--font-serif);
-      font-size: 1rem;
-      color: var(--color-sage-dark);
-      margin-bottom: 0.25rem;
-    }
-
-    .doc-card__meta {
-      font-size: 0.775rem;
-      color: var(--color-text-light);
-    }
-
-    .doc-card__desc {
-      font-size: 0.875rem;
-      color: var(--color-text-light);
-      line-height: 1.6;
-      flex: 1;
-    }
-
+    }
     /* =====================================================
        CONTACT BAND
     ===================================================== */
