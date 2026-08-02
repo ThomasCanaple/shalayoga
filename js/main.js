@@ -98,3 +98,17 @@
       // Fallback: show all immediately
       revealEls.forEach(el => el.classList.add('visible'));
     }
+
+// -------------------------------------------------------
+// Back to top button
+// -------------------------------------------------------
+const backToTopBtn = document.getElementById('back-to-top');
+
+if (backToTopBtn) {
+  const toggleBackToTop = () => {
+    backToTopBtn.classList.toggle('visible', window.scrollY > 320);
+  };
+
+  toggleBackToTop();
+  window.addEventListener('scroll', toggleBackToTop, { passive: true });
+}
