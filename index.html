@@ -48,7 +48,8 @@
         <!-- Desktop links -->
         <ul class="nav__links" role="list">
           <li><a href="#accueil" class="nav__link active" aria-current="page">Accueil</a></li>
-          <li><a href="#planning" class="nav__link">Planning & Tarifs</a></li>
+          <li><a href="#planning" class="nav__link">Tarifs</a></li>
+          <li><a href="#formules" class="nav__link">Nos formules</a></li>
           <li><a href="#venir" class="nav__link">Venir au shala</a></li>
           <li><a href="#reservation" class="nav__link">Réservation</a></li>
         </ul>
@@ -80,7 +81,8 @@
     <div class="nav__mobile" id="mobile-menu" role="dialog" aria-label="Menu de navigation mobile" aria-hidden="true">
       <ul role="list" style="display:flex;flex-direction:column;align-items:center;gap:0.75rem;width:100%">
         <li><a href="#accueil" class="nav__link" onclick="closeMobileMenu()">Accueil</a></li>
-        <li><a href="#planning" class="nav__link" onclick="closeMobileMenu()">Planning & Tarifs</a></li>
+        <li><a href="#planning" class="nav__link" onclick="closeMobileMenu()">Tarifs</a></li>
+        <li><a href="#formules" class="nav__link" onclick="closeMobileMenu()">Nos formules</a></li>
         <li><a href="#venir" class="nav__link" onclick="closeMobileMenu()">Venir au shala</a></li>
         <li><a href="#reservation" class="nav__link" onclick="closeMobileMenu()">Réservation</a></li>
       </ul>
@@ -151,9 +153,6 @@
                 <svg class="btn-icon" aria-hidden="true"><use href="#icon-whatsapp"/></svg> Rejoindre le groupe WhatsApp
               </a>
             </div>
-            <a href="#planning" class="btn btn--outline btn--lg" aria-label="Voir le planning des cours">
-              Voir le planning ↓
-            </a>
           </nav>
         </div>
 
@@ -210,7 +209,7 @@
     ===================================================== -->
     <section id="planning" class="section section--alt" aria-labelledby="planning-title">
       <div class="container">
-        <h2 id="planning-title" class="section-title">Planning & Tarifs</h2>
+        <h2 id="planning-title" class="section-title">Tarifs</h2>
         <p class="section-subtitle">
           Retrouvez les créneaux proposés à l'ouverture du shala. Les dates exactes du
           <strong>Vinyasa Yoga</strong> sont communiquées directement dans le groupe WhatsApp.
@@ -293,49 +292,52 @@
             </a>
           </div>
         </aside>
+          </div>
+    </section>
 
-        <!-- Tarifs -->
-        <div style="margin-top:4rem;">
-          <h3 class="section-title" id="tarifs-title" style="margin-top:0.5rem;">Nos formules</h3>
-          <p class="section-subtitle">
-            Deux formules simples pour pratiquer à votre rythme.
-          </p>
+    <!-- =====================================================
+         SECTION 3 – NOS FORMULES
+    ===================================================== -->
+    <section id="formules" class="section section--alt" aria-labelledby="formules-title">
+      <div class="container">
+        <h2 id="formules-title" class="section-title">Nos formules</h2>
+        <p class="section-subtitle">
+          Deux formules simples pour pratiquer à votre rythme.
+        </p>
 
-          <div class="tarifs__grid" role="list" aria-labelledby="tarifs-title">
+        <div class="tarifs__grid" role="list" aria-labelledby="formules-title">
 
-            <div class="tarif-card" role="listitem">
-              <div class="tarif-card__icon" aria-hidden="true">🌱</div>
-              <div class="tarif-card__name">Cours à l'unité</div>
-              <div class="tarif-card__price">20 <span>€ / cours</span></div>
-              <div class="tarif-card__desc">Idéal pour découvrir le shala ou pratiquer ponctuellement.</div>
-              <ul class="tarif-card__features" aria-label="Inclus dans cette formule">
-                <li class="tarif-card__feature">Accès à un cours au choix</li>
-                <li class="tarif-card__feature">Ashtanga, Vinyasa ou Prénatal selon le planning</li>
-                <li class="tarif-card__feature">Réservation par WhatsApp</li>
-              </ul>
-            </div>
+          <div class="tarif-card" role="listitem">
+            <div class="tarif-card__icon" aria-hidden="true">🌱</div>
+            <div class="tarif-card__name">Cours à l'unité</div>
+            <div class="tarif-card__price">20 <span>€ / cours</span></div>
+            <div class="tarif-card__desc">Idéal pour découvrir le shala ou pratiquer ponctuellement.</div>
+            <ul class="tarif-card__features" aria-label="Inclus dans cette formule">
+              <li class="tarif-card__feature">Accès à un cours au choix</li>
+              <li class="tarif-card__feature">Ashtanga, Vinyasa ou Prénatal selon le planning</li>
+              <li class="tarif-card__feature">Réservation par WhatsApp</li>
+            </ul>
+          </div>
 
-            <div class="tarif-card tarif-card--featured" role="listitem" aria-label="Formule recommandée">
-              <div class="tarif-card__badge" aria-label="Formule recommandée">⭐ Populaire</div>
-              <div class="tarif-card__icon" aria-hidden="true">🌿</div>
-              <div class="tarif-card__name">Carnet 10 cours</div>
-              <div class="tarif-card__price">180 <span>€ / 10 cours</span></div>
-              <div class="tarif-card__desc">Une formule avantageuse pour les élèves réguliers.</div>
-              <ul class="tarif-card__features" aria-label="Inclus dans cette formule">
-                <li class="tarif-card__feature">10 cours au choix</li>
-                <li class="tarif-card__feature">Valable sur l'ensemble des cours proposés</li>
-                <li class="tarif-card__feature">Accès groupe WhatsApp</li>
-                <li class="tarif-card__feature">Réservation par WhatsApp</li>
-              </ul>
-            </div>
+          <div class="tarif-card tarif-card--featured" role="listitem" aria-label="Formule recommandée">
+            <div class="tarif-card__badge" aria-label="Formule recommandée">⭐ Populaire</div>
+            <div class="tarif-card__icon" aria-hidden="true">🌿</div>
+            <div class="tarif-card__name">Carnet 10 cours</div>
+            <div class="tarif-card__price">180 <span>€ / 10 cours</span></div>
+            <div class="tarif-card__desc">Une formule avantageuse pour les élèves réguliers.</div>
+            <ul class="tarif-card__features" aria-label="Inclus dans cette formule">
+              <li class="tarif-card__feature">10 cours au choix</li>
+              <li class="tarif-card__feature">Valable sur l'ensemble des cours proposés</li>
+              <li class="tarif-card__feature">Accès groupe WhatsApp</li>
+              <li class="tarif-card__feature">Réservation par WhatsApp</li>
+            </ul>
+          </div>
 
-          </div><!-- /.tarifs__grid -->
+        </div><!-- /.tarifs__grid -->
 
-          <p style="font-size:0.825rem;color:var(--color-text-light);margin-top:1.5rem;line-height:1.6;">
-            * Tous les tarifs sont indiqués TTC. Le règlement s'effectue par virement bancaire après confirmation de votre inscription.
-          </p>
-        </div>
-
+        <p style="font-size:0.825rem;color:var(--color-text-light);margin-top:1.5rem;line-height:1.6;">
+          * Tous les tarifs sont indiqués TTC. Le règlement s'effectue par virement bancaire après confirmation de votre inscription.
+        </p>
       </div>
     </section>
 
@@ -346,22 +348,11 @@
       <div class="container">
         <h2 id="venir-title" class="section-title">Venir au shala</h2>
         <p class="section-subtitle">
-          Le studio se situe au <strong>19, rue Guignegault à Orléans</strong>, avec un accès depuis la
+          Le shala vous accueille au <strong>19, rue Guignegault à Orléans</strong>, avec un accès depuis la
           <strong>rue François Margottin</strong>.
         </p>
 
         <div class="location__grid" role="list" aria-label="Informations pour venir au shala">
-          <article class="location-card" role="listitem">
-            <div class="location-card__header">
-              <div class="location-card__icon" aria-hidden="true">🧭</div>
-              <h3 class="location-card__title">Adresse et accès</h3>
-            </div>
-            <p class="location-card__text">
-              Le shala vous accueille au <strong>19, rue Guignegault à Orléans</strong>.
-              L'entrée du studio se fait <strong>depuis la rue François Margottin</strong>.
-            </p>
-          </article>
-
           <article class="location-card" role="listitem">
             <div class="location-card__header">
               <div class="location-card__icon location-card__icon--warm" aria-hidden="true">⚠️</div>
@@ -447,14 +438,14 @@
             <h3 class="process__note-title">Notre philosophie : l'humain avant tout</h3>
             <p class="process__note-text">
               Shala Yoga a délibérément choisi de ne pas utiliser de plateforme de réservation
-              automatisée. Nous croyons que chaque élève mérite une attention personnalisée.
-              Ce système permet de s'assurer que chaque pratique est adaptée à votre profil,
-              de maintenir des tarifs accessibles, et de construire une vraie communauté.
+              automatisée. Nous croyons que chaque élève mérite une attention particulière.
+              Ce système permet de s'assurer que chaque pratique est adaptée à votre profil.
             </p>
           </div>
         </aside>
       </div>
-    </section>
+    </section>
+
 
     <!-- =====================================================
          CONTACT BAND (CTA)
@@ -533,7 +524,8 @@
           <div class="footer__col-title">Navigation</div>
           <ul class="footer__links" role="list">
             <li><a href="#accueil" class="footer__link">Accueil</a></li>
-            <li><a href="#planning" class="footer__link">Planning & Tarifs</a></li>
+            <li><a href="#planning" class="footer__link">Tarifs</a></li>
+            <li><a href="#formules" class="footer__link">Nos formules</a></li>
             <li><a href="#venir" class="footer__link">Venir au shala</a></li>
             <li><a href="#reservation" class="footer__link">Réservation</a></li>
           </ul>
