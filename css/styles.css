@@ -111,7 +111,6 @@
     }
 
     .section--photo-planning,
-    .section--photo-formules,
     .section--photo-venir {
       position: relative;
       background-size: cover;
@@ -124,12 +123,6 @@
       background-image:
         linear-gradient(180deg, rgba(240, 237, 230, 0.92), rgba(240, 237, 230, 0.94)),
         url('../assets/shala-yoga-2.webp');
-    }
-
-    .section--photo-formules {
-      background-image:
-        linear-gradient(180deg, rgba(240, 237, 230, 0.93), rgba(240, 237, 230, 0.95)),
-        url('../assets/shala-yoga-3.webp');
     }
 
     .section--photo-venir {
@@ -695,11 +688,35 @@
     }
 
     /* Tarifs */
+    .formules__layout {
+      display: grid;
+      grid-template-columns: minmax(0, 2fr) minmax(260px, 1fr);
+      gap: 1.5rem;
+      align-items: stretch;
+    }
+
     .tarifs__grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
       gap: 1.5rem;
-      margin-top: 2.5rem;
+    }
+
+    .formules__photo-frame {
+      margin: 0;
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--color-border);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      min-height: 100%;
+      background: var(--color-white);
+    }
+
+    .formules__photo {
+      width: 100%;
+      height: 100%;
+      min-height: 320px;
+      object-fit: cover;
+      filter: saturate(0.92) contrast(0.95);
     }
 
     .tarif-card {
@@ -1277,6 +1294,14 @@
 
       .location__grid {
         grid-template-columns: 1fr;
+      }
+
+      .formules__layout {
+        grid-template-columns: 1fr;
+      }
+
+      .formules__photo {
+        min-height: 260px;
       }
     }
 
