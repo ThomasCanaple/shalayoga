@@ -848,9 +848,22 @@
     }
 
     .process__note-icon {
-      font-size: 2rem;
       flex-shrink: 0;
       margin-top: 0.1rem;
+      width: 2.5rem;
+      height: 2.5rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background: rgba(122, 158, 126, 0.15);
+      color: var(--color-sage-dark);
+    }
+
+    .process__note-icon svg {
+      width: 1.35rem;
+      height: 1.35rem;
+      display: block;
     }
 
     .process__note-title {
@@ -871,7 +884,7 @@
     ===================================================== */
     .location__grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-template-columns: repeat(2, minmax(280px, 1fr));
       gap: 1.5rem;
     }
 
@@ -1223,6 +1236,10 @@
 
       .footer__grid > *:first-child {
         grid-column: 1 / -1;
+      }
+
+      .location__grid {
+        grid-template-columns: 1fr;
       }
     }
 
