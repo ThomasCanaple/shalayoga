@@ -10,7 +10,7 @@
   <meta property="og:url" content="https://www.shalayoga.fr" />
   <meta property="og:type" content="website" />
   <link rel="canonical" href="https://www.shalayoga.fr" />
-  <title>Shala Yoga – Ashtanga & Yoga Prénatal</title>
+  <title>Shala Yoga – Orléans Saint Marceau</title>
 
   <link rel="stylesheet" href="css/styles.css" />
 </head>
@@ -29,6 +29,16 @@
       <circle cx="12" cy="12" r="10"/>
       <path d="M12 16v-4"/>
       <path d="M12 8h.01"/>
+    </symbol>
+    <symbol id="icon-card" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="2" y="5" width="20" height="14" rx="2"/>
+      <path d="M2 10h20"/>
+      <path d="M7 15h3"/>
+    </symbol>
+    <symbol id="icon-chat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M21 11.5a8.5 8.5 0 0 1-8.5 8.5c-1.2 0-2.34-.25-3.37-.7L3 21l1.7-5.5A8.5 8.5 0 1 1 21 11.5z"/>
+      <path d="M8.5 11.5h7"/>
+      <path d="M8.5 8.5h4.5"/>
     </symbol>
   </svg>
 
@@ -134,26 +144,6 @@
             afin de soulager les maux de la grossesse en se concentrant sur la respiration et la relaxation.        
             Je vous accueille dans un cadre intime et chaleureux pour une pratique <strong>bienveillante</strong> et <strong>adaptée à chaque élève</strong>.
           </p>
-          <nav class="hero__actions" aria-label="Actions principales">
-            <div class="hero__contact-actions">
-              <a
-                href="mailto:bienvenue@shalayoga.fr?subject=Première%20Inscription%20-%20Shala%20Yoga"
-                class="btn btn--primary btn--lg"
-                aria-label="Nous contacter par e-mail pour une première inscription"
-              >
-                <svg class="btn-icon" aria-hidden="true"><use href="#icon-email"/></svg> Nous contacter par Email
-              </a>
-              <a
-                href="https://chat.whatsapp.com/GVvOVhB5A4K4PdAxy5CqjN?s=sh&p=a&ilr=4&amv=2"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="btn btn--whatsapp btn--lg"
-                aria-label="Rejoindre le groupe WhatsApp de Shala Yoga (nouvel onglet)"
-              >
-                <svg class="btn-icon" aria-hidden="true"><use href="#icon-whatsapp"/></svg> Rejoindre le groupe WhatsApp
-              </a>
-            </div>
-          </nav>
         </div>
 
         <!-- Visual cards -->
@@ -190,16 +180,6 @@
               </div>
             </article>
           </div>
-          <!-- Decorative quote -->
-          <blockquote
-            style="background:var(--color-white);border-radius:var(--radius-lg);padding:1.25rem 1.5rem;box-shadow:var(--shadow-sm);border-left:3px solid var(--color-sage-light);"
-            aria-label="Citation inspirante"
-          >
-            <p style="font-family:var(--font-serif);font-size:0.95rem;color:var(--color-text-light);font-style:italic;line-height:1.7;margin-bottom:0.5rem;">
-              « Le yoga n'est pas l'art de plier le corps, c'est l'art de déplier l'âme. »
-            </p>
-            <footer style="font-size:0.75rem;color:var(--color-sage);font-weight:600;">Shri K. Pattabhi Jois</footer>
-          </blockquote>
         </div>
       </div>
     </section>
@@ -372,7 +352,7 @@
     ===================================================== -->
     <section id="reservation" class="section section--sage" aria-labelledby="reservation-title">
       <div class="container">
-        <h2 id="reservation-title" class="section-title">Processus de Réservation</h2>
+        <h2 id="reservation-title" class="section-title">Réservation</h2>
         <p class="section-subtitle">
           Pas d'application complexe ici, juste une approche humaine, directe et chaleureuse.
           Voici comment rejoindre la famille Shala Yoga en 3 étapes simples.
@@ -380,7 +360,9 @@
 
         <ol class="process__steps" aria-label="Étapes d'inscription">
           <li class="process__step">
-            <div class="process__step-num process__step-num--1" aria-hidden="true">📧</div>
+            <div class="process__step-num process__step-num--1" aria-hidden="true">
+              <svg class="process__step-icon"><use href="#icon-email"/></svg>
+            </div>
             <div>
               <h3 class="process__step-title">Étape 1 – Premier contact</h3>
               <p class="process__step-desc">
@@ -399,7 +381,9 @@
           </li>
 
           <li class="process__step">
-            <div class="process__step-num process__step-num--2" aria-hidden="true">💳</div>
+            <div class="process__step-num process__step-num--2" aria-hidden="true">
+              <svg class="process__step-icon"><use href="#icon-card"/></svg>
+            </div>
             <div>
               <h3 class="process__step-title">Étape 2 – Règlement</h3>
               <p class="process__step-desc">
@@ -411,7 +395,9 @@
           </li>
 
           <li class="process__step">
-            <div class="process__step-num process__step-num--3" aria-hidden="true">💬</div>
+            <div class="process__step-num process__step-num--3" aria-hidden="true">
+              <svg class="process__step-icon"><use href="#icon-chat"/></svg>
+            </div>
             <div>
               <h3 class="process__step-title">Étape 3 – Rejoindre la communauté</h3>
               <p class="process__step-desc">
@@ -548,10 +534,9 @@
             </li>
             <li>
               <a
-                href="assets/reglement-interieur.pdf"
-                download="Reglement-Interieur-ShalaYoga.pdf"
+                href="reglement-interieur.html"
                 class="footer__link"
-                aria-label="Télécharger le Règlement Intérieur (PDF)"
+                aria-label="Consulter le Règlement Intérieur"
               >
                 Règlement Intérieur
               </a>
@@ -576,10 +561,9 @@
             Mentions Légales
           </button>
           <a
-            href="assets/reglement-interieur.pdf"
-            download="Reglement-Interieur-ShalaYoga.pdf"
+            href="reglement-interieur.html"
             class="footer__legal-link"
-            aria-label="Règlement Intérieur (PDF)"
+            aria-label="Consulter le Règlement Intérieur"
           >
             Règlement Intérieur
           </a>
