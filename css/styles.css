@@ -394,8 +394,8 @@
      .hero__inner::after {
        content: '';
        position: absolute;
-       right: 50%;
-       top: 50%;
+       right: 10%;
+       top: 20%;
        transform: translateY(-50%);
        width: 320px;
        height: 320px;
@@ -403,7 +403,6 @@
        background-size: contain;
        background-repeat: no-repeat;
        background-position: center;
-       opacity: 0.08;
        pointer-events: none;
        z-index: 0;
      }
@@ -873,18 +872,6 @@
       display: block;
     }
 
-    .process__step-iconwrap {
-      width: 2.5rem;
-      height: 2.5rem;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 50%;
-      background: rgba(228, 201, 172, 0.18);
-      color: var(--color-sage-dark);
-      flex-shrink: 0;
-    }
-
     .process__step-title {
       font-family: var(--font-serif);
       font-size: 1.1rem;
@@ -992,11 +979,6 @@
       flex-shrink: 0;
     }
 
-    .location-card__icon--warm {
-      background-color: rgba(61, 104, 138, 0.14);
-      color: var(--color-warm-dark);
-    }
-
     .location-card__header {
       display: flex;
       align-items: center;
@@ -1068,16 +1050,6 @@
       padding-bottom: 2.5rem;
       border-bottom: 1px solid rgba(255, 255, 255, 0.1);
       margin-bottom: 2rem;
-    }
-
-    .footer__brand-logo {
-      margin-bottom: 1rem;
-      filter: brightness(0) invert(1) opacity(0.85);
-    }
-
-    .footer__brand-logo img {
-      height: 40px;
-      width: auto;
     }
 
     .footer__brand-desc {
@@ -1427,3 +1399,5 @@
         transform: none;
       }
     }
+
+
