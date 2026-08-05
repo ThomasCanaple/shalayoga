@@ -150,6 +150,19 @@
       margin-bottom: 1.5mm;
     }
 
+    .card__contact-item:last-child {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      column-gap: 2.5mm;
+      align-items: center;
+      margin-bottom: 0;
+    }
+
+    .card__contact-item:last-child .card__contact-label,
+    .card__contact-item:last-child .card__contact-value {
+      grid-column: 1;
+    }
+
     .card__contact-label {
       font-weight: 600;
       color: #4a6741;
@@ -192,6 +205,16 @@
       justify-content: center;
       margin-top: 1mm;
       flex-shrink: 0;
+    }
+
+    .card__contact-item:last-child .card__qrcode {
+      grid-column: 2;
+      grid-row: 1 / span 2;
+      width: 13mm;
+      height: 13mm;
+      margin-top: 0;
+      background: rgba(255, 255, 255, 0.9);
+      border-color: #d6d2ca;
     }
 
     .card__qrcode img {
