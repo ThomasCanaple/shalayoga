@@ -169,7 +169,7 @@
     }
 
     .btn--primary:hover {
-      background-color: #3a5233;
+      background-color: var(--color-warm-dark);
     }
 
     .btn--sage {
@@ -383,13 +383,30 @@
     }
 
     .hero__inner {
-      position: relative;
-      z-index: 1;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 4rem;
-      align-items: center;
-    }
+       position: relative;
+       z-index: 1;
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+       gap: 4rem;
+       align-items: flex-start;
+     }
+
+     .hero__inner::after {
+       content: '';
+       position: absolute;
+       right: 50%;
+       top: 50%;
+       transform: translateY(-50%);
+       width: 320px;
+       height: 320px;
+       background-image: url("../assets/logo-business-card.png");
+       background-size: contain;
+       background-repeat: no-repeat;
+       background-position: center;
+       opacity: 0.08;
+       pointer-events: none;
+       z-index: 0;
+     }
 
     .hero__badge {
       display: inline-flex;
@@ -405,11 +422,6 @@
       text-transform: uppercase;
       color: var(--color-sage-dark);
       margin-bottom: 1.5rem;
-    }
-
-    .hero__badge::before {
-      content: '🌿';
-      font-size: 0.875rem;
     }
 
     .hero__title {
@@ -475,10 +487,13 @@
     }
 
     .hero__visual {
-      display: flex;
-      flex-direction: column;
-      gap: 1.5rem;
-    }
+       display: flex;
+       flex-direction: column;
+       gap: 1.5rem;
+       position: relative;
+       z-index: 1;
+       align-self: flex-end;
+     }
 
     .hero__cards {
       display: flex;
