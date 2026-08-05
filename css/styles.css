@@ -1008,7 +1008,7 @@
        CONTACT BAND
     ===================================================== */
     .contact-band {
-      background: linear-gradient(135deg, var(--color-sage-dark) 0%, #3a5233 50%, #2d4028 100%);
+      background: var(--color-sage);
       color: var(--color-white);
       padding-block: 5rem;
     }
