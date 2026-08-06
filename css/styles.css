@@ -427,14 +427,14 @@
       font-family: var(--font-serif);
       font-size: clamp(2.2rem, 5vw, 3.75rem);
       font-weight: 400;
-      color: var(--color-sage-dark);
+      color: var(--color-warm-dark);
       line-height: 1.15;
       margin-bottom: 1.5rem;
     }
 
     .hero__title em {
       font-style: italic;
-      color: var(--color-warm-dark);
+      color: var(--color-sage-dark);
     }
 
     .hero__desc {
