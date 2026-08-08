@@ -14,7 +14,7 @@
       --color-sage:        #a07850;
       --color-sage-dark:   #8b6643;
       --color-sage-light:  #c39a72;
-      --color-warm:        #b56f6f;
+      --color-warm:        #dab7b7;
       --color-warm-dark:   #9f6161;
       --color-text:        #3a3530;
       --color-text-light:  #6b6560;
@@ -441,13 +441,22 @@
       font-size: 1.02rem;
       color: var(--color-text-light);
       max-width: 52ch;
-      margin-bottom: 2.25rem;
+      margin-bottom: 0.5rem;
       line-height: 1.8;
       font-style: italic;
       padding: 1rem 1.15rem;
       border-left: 3px solid rgba(181, 111, 111, 0.35);
       background-color: rgba(255, 255, 255, 0.5);
       border-radius: 0 var(--radius) var(--radius) 0;
+    }
+
+    .hero__quote-author {
+      max-width: 52ch;
+      text-align: right;
+      font-size: 0.88rem;
+      color: var(--color-sage-dark);
+      font-style: italic;
+      margin-bottom: 2.25rem;
     }
 
     .btn-icon {
@@ -1227,7 +1236,7 @@
     }
 
     .back-to-top:hover {
-      background-color: #3a5233;
+      background-color: var(--color-warm-dark);
     }
 
     .back-to-top.visible {
