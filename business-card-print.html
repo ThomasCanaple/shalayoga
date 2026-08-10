@@ -8,9 +8,9 @@
     :root {
       --trim-w: 85mm;
       --trim-h: 55mm;
-      --bleed: 3mm;
-      --doc-w: 91mm;
-      --doc-h: 61mm;
+      --bleed: 6mm;
+      --doc-w: 97mm;
+      --doc-h: 67mm;
 
       --color-bg: #f8f6f1;
       --color-brand: #a07850;
@@ -164,16 +164,6 @@
       padding: 7mm;
     }
 
-    .card--verso::before {
-      content: "";
-      position: absolute;
-      top: 3mm;
-      left: 3mm;
-      right: 3mm;
-      height: 1px;
-      background: rgba(160, 120, 80, 0.3);
-    }
-
     .body {
       height: 100%;
       display: flex;
@@ -258,7 +248,7 @@
     }
 
     @page {
-      size: 91mm 61mm;
+      size: 97mm 67mm;
       margin: 0;
     }
 
