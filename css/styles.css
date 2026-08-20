@@ -478,6 +478,7 @@
       padding: 0.85rem 1rem;
       margin-bottom: 1.5rem;
       max-width: 52ch;
+      box-sizing: border-box;
     }
 
     .hero__visual {
@@ -1326,4 +1327,3 @@
         transform: none;
       }
     }
-
