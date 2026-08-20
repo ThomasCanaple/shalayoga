@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shala Yoga - Sticker rond 54 mm</title>
+  <style>
+    :root {
+      --sticker-size: 54mm;
+      --doc-size: 66mm;
+      --color-bg: #f8f6f1;
+      --color-brand: #a07850;
+      --color-accent: #b56f6f;
+      --color-text: #3a3530;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+      background: #ece8e2;
+      color: var(--color-text);
+      padding: 16px;
+    }
+
+    .help {
+      max-width: 760px;
+      margin: 0 auto 14px;
+      padding: 10px 12px;
+      border: 1px solid #ddcec0;
+      background: #fffaf5;
+      border-radius: 6px;
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+    .help strong {
+      color: #8b6643;
+    }
+
+    .sheet {
+      width: var(--doc-size);
+      height: var(--doc-size);
+      margin: 0 auto;
+      background: #fff;
+      display: grid;
+      place-items: center;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
+      print-color-adjust: exact;
+      -webkit-print-color-adjust: exact;
+      page-break-after: always;
+      break-after: page;
+    }
+
+    .sticker {
+      width: var(--sticker-size);
+      height: var(--sticker-size);
+      border-radius: 50%;
+      background: var(--color-bg);
+      border: 0.25mm solid rgba(160, 120, 80, 0.25);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 5mm;
+      gap: 1.4mm;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .flower {
+      width: 19mm;
+      height: auto;
+      object-fit: contain;
+      margin-bottom: 0.5mm;
+      filter: drop-shadow(0 0 0.4px rgba(0, 0, 0, 0.08));
+    }
+
+    .title {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 12.5pt;
+      line-height: 1.1;
+      color: var(--color-brand);
+      font-weight: 400;
+    }
+
+    .subtitle {
+      font-size: 7.2pt;
+      line-height: 1.2;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: var(--color-accent);
+      font-weight: 600;
+    }
+
+    @page {
+      size: 66mm 66mm;
+      margin: 0;
+    }
+
+    @media print {
+      body {
+        background: #fff;
+        padding: 0;
+      }
+
+      .help {
+        display: none;
+      }
+
+      .sheet {
+        margin: 0;
+        box-shadow: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="help">
+    <strong>Sticker rond 54 mm</strong><br />
+    Format document : 66 × 66 mm (avec marge technique autour du sticker).<br />
+    Export PDF : échelle 100 %, marges aucune, fonds graphiques activés.
+  </div>
+
+  <section class="sheet" aria-label="Sticker rond Shala Yoga">
+    <div class="sticker">
+      <img src="assets/logo-business-card.png" alt="Fleur Shala Yoga" class="flower" />
+      <div class="title">Shala Yoga</div>
+      <div class="subtitle">Studio de Yoga</div>
+    </div>
+  </section>
+</body>
+</html>
