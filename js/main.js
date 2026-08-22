@@ -1,4 +1,4 @@
-    // -------------------------------------------------------
+﻿    // -------------------------------------------------------
     // Mobile menu toggle
     // -------------------------------------------------------
     const hamburgerBtn = document.getElementById('hamburger-btn');
@@ -16,43 +16,57 @@
       mobileMenu.setAttribute('aria-hidden', String(!isOpen));
     });
 
-    // Close mobile menu on Escape key
+    // Close mobile menu and all modals on Escape key
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape') {
         closeMobileMenu();
-        closeModal();
+        closeAllModals();
       }
     });
 
     // -------------------------------------------------------
-    // Mentions Légales modal
+    // Modal generique (Mentions légales, CGV, Règlement)
     // -------------------------------------------------------
-    const modalOverlay   = document.getElementById('mentions-legales-modal');
-    const modalCloseBtn  = document.getElementById('modal-close-btn');
-    const mlBtn1         = document.getElementById('mentions-legales-btn');
-    const mlBtn2         = document.getElementById('mentions-legales-btn-2');
+    function setupModal(overlayId, closeBtnId, openBtnIds) {
+      const overlay = document.getElementById(overlayId);
+      if (!overlay) return null;
+      const closeBtn = document.getElementById(closeBtnId);
 
-    function openModal() {
-      modalOverlay.classList.add('open');
-      modalOverlay.setAttribute('aria-hidden', 'false');
-      // Move focus to modal
-      const modal = modalOverlay.querySelector('.modal');
-      modal.focus();
+      function open() {
+        overlay.classList.add('open');
+        overlay.setAttribute('aria-hidden', 'false');
+        const inner = overlay.querySelector('.modal');
+        if (inner) inner.focus();
+      }
+
+      function close() {
+        overlay.classList.remove('open');
+        overlay.setAttribute('aria-hidden', 'true');
+      }
+
+      openBtnIds.forEach(id => {
+        const btn = document.getElementById(id);
+        if (btn) btn.addEventListener('click', open);
+      });
+
+      if (closeBtn) closeBtn.addEventListener('click', close);
+
+      overlay.addEventListener('click', (e) => {
+        if (e.target === overlay) close();
+      });
+
+      return close;
     }
 
-    function closeModal() {
-      modalOverlay.classList.remove('open');
-      modalOverlay.setAttribute('aria-hidden', 'true');
+    const closeML  = setupModal('mentions-legales-modal', 'modal-close-btn',    ['mentions-legales-btn', 'mentions-legales-btn-2']);
+    const closeCGV = setupModal('cgv-modal',              'cgv-close-btn',       ['cgv-btn', 'cgv-btn-2']);
+    const closeRI  = setupModal('reglement-modal',        'reglement-close-btn', ['reglement-btn', 'reglement-btn-2']);
+
+    function closeAllModals() {
+      if (closeML)  closeML();
+      if (closeCGV) closeCGV();
+      if (closeRI)  closeRI();
     }
-
-    mlBtn1.addEventListener('click', openModal);
-    mlBtn2.addEventListener('click', openModal);
-    modalCloseBtn.addEventListener('click', closeModal);
-
-    // Close on backdrop click
-    modalOverlay.addEventListener('click', (e) => {
-      if (e.target === modalOverlay) closeModal();
-    });
 
     // -------------------------------------------------------
     // Active nav link on scroll (IntersectionObserver)
@@ -95,20 +109,19 @@
 
       revealEls.forEach(el => revealObserver.observe(el));
     } else {
-      // Fallback: show all immediately
       revealEls.forEach(el => el.classList.add('visible'));
     }
 
-// -------------------------------------------------------
-// Back to top button
-// -------------------------------------------------------
-const backToTopBtn = document.getElementById('back-to-top');
+    // -------------------------------------------------------
+    // Back to top button
+    // -------------------------------------------------------
+    const backToTopBtn = document.getElementById('back-to-top');
 
-if (backToTopBtn) {
-  const toggleBackToTop = () => {
-    backToTopBtn.classList.toggle('visible', window.scrollY > 320);
-  };
+    if (backToTopBtn) {
+      const toggleBackToTop = () => {
+        backToTopBtn.classList.toggle('visible', window.scrollY > 320);
+      };
 
-  toggleBackToTop();
-  window.addEventListener('scroll', toggleBackToTop, { passive: true });
-}
+      toggleBackToTop();
+      window.addEventListener('scroll', toggleBackToTop, { passive: true });
+    }
