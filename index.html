@@ -73,7 +73,7 @@
           class="btn btn--primary nav__cta"
           aria-label="Nous contacter par e-mail pour une première inscription"
         >
-          <svg class="btn-icon" aria-hidden="true"><use href="#icon-email"/></svg> Me contacter
+          <svg class="btn-icon" aria-hidden="true"><use href="#icon-email"/></svg> Réserver par e-mail
         </a>
 
         <!-- Mobile hamburger -->
@@ -315,8 +315,8 @@
               <div class="tarif-card__desc">Idéal pour découvrir le shala ou pratiquer ponctuellement.</div>
               <ul class="tarif-card__features" aria-label="Inclus dans cette formule">
                 <li class="tarif-card__feature">Accès à un cours au choix</li>
-                <li class="tarif-card__feature">Ashtanga, Vinyasa ou Prénatal selon le planning</li>
-                <li class="tarif-card__feature">Réservation par WhatsApp</li>
+                <li class="tarif-card__feature">Ashtanga, Vinyasa, Prénatal ou Maman Bébé selon le planning</li>
+                <li class="tarif-card__feature">Accès groupe WhatsApp</li>
               </ul>
             </div>
 
@@ -328,7 +328,7 @@
               <ul class="tarif-card__features" aria-label="Inclus dans cette formule">
                 <li class="tarif-card__feature">5 cours au choix</li>
                 <li class="tarif-card__feature">Valable sur l'ensemble des cours proposés</li>
-                <li class="tarif-card__feature">Réservation par WhatsApp</li>
+                <li class="tarif-card__feature">Accès groupe WhatsApp</li>
               </ul>
             </div>
 
@@ -340,7 +340,6 @@
                 <li class="tarif-card__feature">10 cours au choix</li>
                 <li class="tarif-card__feature">Valable sur l'ensemble des cours proposés</li>
                 <li class="tarif-card__feature">Accès groupe WhatsApp</li>
-                <li class="tarif-card__feature">Réservation par WhatsApp</li>
               </ul>
             </div>
           </div>
@@ -356,7 +355,7 @@
         </div><!-- /.formules__layout -->
 
         <p style="font-size:0.825rem;color:var(--color-text-light);margin-top:1.5rem;line-height:1.6;">
-          * Tous les tarifs sont indiqués TTC. Le règlement s'effectue par virement bancaire après confirmation de votre inscription.
+          * Tous les tarifs sont indiqués TTC. Le règlement s'effectue par espèce ou virement bancaire après confirmation de votre inscription.
         </p>
       </div>
     </section>
@@ -398,7 +397,7 @@
         <h2 id="reservation-title" class="section-title">Réservation</h2>
         <p class="section-subtitle">
           Pas d'application complexe ici, juste une approche humaine, directe et chaleureuse.
-          Voici comment rejoindre la famille Shala Yoga en 3 étapes simples.
+          Voici comment rejoindre la famille Shala Yoga.
         </p>
 
         <ol class="process__steps" aria-label="Étapes d'inscription">
@@ -409,14 +408,14 @@
             <div>
               <h3 class="process__step-title">Premier contact</h3>
               <p class="process__step-desc">
-                Envoyez-nous un e-mail pour votre <strong>première inscription</strong>. Le règlement s'effectue par virement bancaire après confirmation de votre inscription.
+                Envoyez-nous un e-mail pour votre <strong>première inscription</strong>. Le règlement s'effectue en espèce ou par virement bancaire après confirmation de votre inscription.
               </p>
               <a
                 href="mailto:bienvenue@shalayoga.fr?subject=Première%20Inscription%20-%20Shala%20Yoga"
                 class="btn btn--primary"
                 aria-label="Envoyer un e-mail de première inscription à Shala Yoga"
               >
-                  <svg class="btn-icon" aria-hidden="true"><use href="#icon-email"/></svg> Nous contacter par E-mail
+                  <svg class="btn-icon" aria-hidden="true"><use href="#icon-email"/></svg> Réserver par E-mail
               </a>
             </div>
           </li>
@@ -428,7 +427,7 @@
             <div>
               <h3 class="process__step-title">Rejoindre la communauté</h3>
               <p class="process__step-desc">
-                Si vous le souhaitez, vous serez ajouté·e au groupe <strong>WhatsApp officiel</strong> du studio.
+                Si vous le souhaitez, vous serez ajouté·e au groupe <strong>WhatsApp</strong> du studio.
                 Vous y recevrez chaque dimanche soir le planning de la semaine et les places disponibles de dernière minute.
               </p>
               <a
@@ -465,7 +464,7 @@
             class="btn btn--primary btn--lg"
             aria-label="Me contacter par e-mail pour une première inscription"
           >
-            <svg class="btn-icon" aria-hidden="true"><use href="#icon-email"/></svg> Me contacter par E-mail
+            <svg class="btn-icon" aria-hidden="true"><use href="#icon-email"/></svg> Réserver par e-mail
           </a>
           <a
             href="https://chat.whatsapp.com/GVvOVhB5A4K4PdAxy5CqjN?s=sh&p=a&ilr=4&amv=2"
@@ -474,7 +473,7 @@
             class="btn btn--whatsapp btn--lg"
             aria-label="Rejoindre le groupe WhatsApp de Shala Yoga (ouvert dans un nouvel onglet)"
           >
-            <svg class="btn-icon" aria-hidden="true"><use href="#icon-whatsapp"/></svg> Discuter sur WhatsApp
+            <svg class="btn-icon" aria-hidden="true"><use href="#icon-whatsapp"/></svg> Rejoindre le groupe WhatsApp
           </a>
         </div>
       </div>
@@ -491,7 +490,7 @@
         <!-- Brand -->
         <div>
           <p class="footer__brand-desc">
-            Studio de yoga que spécialisé en <strong>Ashtanga</strong> et <strong>Yoga Prénatal</strong>.
+            Studio de yoga spécialisé en <strong>Ashtanga</strong> et <strong>Yoga Prénatal</strong>.
             Un accueil chaleureux, des cours en petit groupe, une pratique authentique.
           </p>
           <div style="margin-top:1.25rem;display:flex;gap:0.75rem;flex-wrap:wrap;">
@@ -544,13 +543,26 @@
               </button>
             </li>
             <li>
-              <a
-                href="reglement-interieur.html"
+              <button
                 class="footer__link"
-                aria-label="Consulter le Règlement Intérieur"
+                id="cgv-btn"
+                style="background:none;border:none;cursor:pointer;font-size:0.875rem;padding:0;text-align:left;"
+                aria-haspopup="dialog"
+                aria-controls="cgv-modal"
+              >
+                Conditions générales de vente
+              </button>
+            </li>
+            <li>
+              <button
+                class="footer__link"
+                id="reglement-btn"
+                style="background:none;border:none;cursor:pointer;font-size:0.875rem;padding:0;text-align:left;"
+                aria-haspopup="dialog"
+                aria-controls="reglement-modal"
               >
                 Règlement Intérieur
-              </a>
+              </button>
             </li>
             <li><a href="mailto:bienvenue@shalayoga.fr" class="footer__link">Contact</a></li>
             <li><a href="https://www.shalayoga.fr" class="footer__link">www.shalayoga.fr</a></li>
@@ -571,13 +583,139 @@
           >
             Mentions Légales
           </button>
-          <a
-            href="reglement-interieur.html"
+          <button
             class="footer__legal-link"
-            aria-label="Consulter le Règlement Intérieur"
+            id="cgv-btn-2"
+            style="background:none;border:none;cursor:pointer;font-size:0.8rem;padding:0;"
+            aria-haspopup="dialog"
+            aria-controls="cgv-modal"
           >
-            Règlement Intérieur
-          </a>
+            Conditions générales de vente
+          </button>
+          <button
+            class="footer__legal-link"
+            id="reglement-btn-2"
+            style="background:none;border:none;cursor:pointer;font-size:0.8rem;padding:0;"
+            aria-haspopup="dialog"
+            aria-controls="reglement-modal"
+          >
+            Règlement intérieur
+          </button>
+        </div>
+
+        <!-- =====================================================
+             REGLEMENT MODAL
+        ===================================================== -->
+        <div
+          class="modal-overlay"
+          id="reglement-modal"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="reglement-title"
+          aria-hidden="true"
+        >
+          <div class="modal" tabindex="-1">
+            <button class="modal__close" id="reglement-close-btn" aria-label="Fermer le règlement intérieur">✕</button>
+            <h2 id="reglement-title" class="modal__title">Règlement intérieur</h2>
+            <div class="modal__body">
+              <h3>1. Arrivée et ponctualité</h3>
+              <p>Merci d'arriver 10 minutes avant le cours. Pour un premier cours, il est recommandé de venir 15 minutes en avance afin d'échanger avec l'enseignante et d'adapter la pratique à vos besoins.</p>
+
+              <h3>2. Respect du lieu et du groupe</h3>
+              <p>Le studio est un espace de calme et d'écoute. Merci de respecter les autres élèves, de couper votre téléphone et de maintenir une ambiance propice à la pratique.</p>
+
+              <h3>3. Santé et responsabilité</h3>
+              <p>Informez l'enseignante de toute blessure, contre-indication ou grossesse. Chaque élève pratique à son rythme, dans le respect de ses limites.</p>
+
+              <h3>4. Réservations et annulations</h3>
+              <p>Les réservations et mises à jour de planning se font via le groupe WhatsApp du studio. En cas d'annulation, merci de prévenir au moins 12 heures avant le cours. Au-delà, la séance reste due.</p>
+
+              <h3>5. Accessibilité</h3>
+              <p>Le studio est situé à l'étage sans ascenseur et n'est malheureusement pas accessible aux personnes à mobilité réduite.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- =====================================================
+             CGV MODAL
+        ===================================================== -->
+        <div
+          class="modal-overlay"
+          id="cgv-modal"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="cgv-title"
+          aria-hidden="true"
+        >
+          <div class="modal" tabindex="-1">
+            <button class="modal__close" id="cgv-close-btn" aria-label="Fermer les conditions générales de vente">✕</button>
+            <h2 id="cgv-title" class="modal__title">Conditions générales de vente</h2>
+            <div class="modal__body">
+              <h3>CONDITIONS GÉNÉRALES DE VENTE (CGV)</h3>
+              <p>
+                Les présentes Conditions Générales de Vente (CGV) régissent les relations contractuelles entre Shala Yoga, représentée par EI Laetitia Montalcino, et toute personne physique ou morale (ci-après "le Client") souhaitant réserver un cours ou une formation de yoga.
+              </p>
+
+              <h3>1. Objet</h3>
+              <p>
+                Les présentes CGV s'appliquent à l'ensemble des prestations de services (cours collectifs, cours particuliers, ateliers, stages, formations) proposées par Shala Yoga et réservées par le Client via le site internet, par e-mail ou WhatsApp.
+              </p>
+
+              <h3>2. Tarifs</h3>
+              <p>
+                Les tarifs des prestations sont indiqués sur le site internet en Euros (€). Conformément à l'article 293 B du Code Général des Impôts (CGI), la TVA est non applicable. Les prix indiqués sont donc nets.
+              </p>
+              <p>
+                Shala Yoga se réserve le droit de modifier ses tarifs à tout moment. Les prestations existantes ou cartes de cours déjà réglées restent valables au tarif en vigueur lors de l'achat.
+              </p>
+
+              <h3>3. Modalités de réservation</h3>
+              <p>
+                Les réservations de cours ou de formations s'effectuent par e-mail ou via l'application WhatsApp.
+              </p>
+              <p>
+                La réservation devient définitive après confirmation écrite (e-mail ou SMS) de la part de Shala Yoga et validation des modalités de règlement.
+              </p>
+
+              <h3>4. Modalités de paiement</h3>
+              <p>
+                Le paiement en ligne n'est pas disponible sur le site internet. Le règlement des prestations s'effectue exclusivement par les moyens suivants :
+              </p>
+              <p>
+                - par virement bancaire : Le paiement doit être effectué avant le début de la prestation. Les coordonnées bancaires (IBAN) seront transmises au Client lors de la confirmation de sa demande de réservation.
+              </p>
+              <p>
+                - en espèces : Le règlement s'effectue sur place, au plus tard le jour même du cours ou de la formation, avant le début de la séance. Le Client est invité à faire l'appoint.
+              </p>
+
+              <h3>5. Conditions d'annulation et de report</h3>
+              <p>
+                Le bon fonctionnement des cours et le respect mutuel nécessitent le respect des règles d'annulation suivantes :
+              </p>
+              <p>
+                Du fait du Client : Toute annulation d'un cours ou d'une formation par le Client doit être signalée au moins 12 heures avant le début de la séance. Si ce délai est respecté, le cours peut être reporté. Si l’annulation intervient moins de 12 heures à l’avance, ou en cas de non-présentation, la prestation est considérée comme due et aucun remboursement ou report ne sera accordé.
+              </p>
+              <p>
+                Du fait de l'enseignant : En cas de force majeure, de maladie ou d'effectif insuffisant, Shala Yoga se réserve le droit d'annuler ou de reporter un cours. Les Clients seront prévenus dès que possible. Le cours annulé sera alors soit reporté, soit non décompté (pour les abonnements/cartes).
+              </p>
+
+              <h3>6. État de santé et responsabilité</h3>
+              <p>
+                Le Client s’engage à vérifier auprès de son médecin que son état de santé lui permet de pratiquer le yoga.
+              </p>
+              <p>
+                Le Client s'engage à informer explicitement l'enseignant, avant le début de chaque séance, de toute condition médicale particulière, blessure, douleur ou grossesse.
+              </p>
+              <p>
+                Shala Yoga ne pourra être tenu responsable en cas de blessure résultant d'une mauvaise exécution des consignes ou de la non-divulgation d'une contre-indication médicale par le Client.
+              </p>
+
+              <h3>7. Droit applicable et règlement des litiges</h3>
+              <p>
+                Les présentes CGV sont soumises au droit français. En cas de litige, le Client et Shala Yoga s’engagent à rechercher une solution amiable avant toute action judiciaire.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -602,44 +740,55 @@
       >
         ✕
       </button>
-      <h2 id="modal-title" class="modal__title">Mentions Légales</h2>
+      <h2 id="modal-title" class="modal__title">Mentions légales</h2>
       <div class="modal__body">
-        <h3>Éditeur du site</h3>
+        <h3>1. Éditeur du site</h3>
         <p>
-          <strong>Shala Yoga</strong><br />
-          Site web : <a href="https://www.shalayoga.fr" style="color:var(--color-sage);">www.shalayoga.fr</a><br />
-          E-mail : <a href="mailto:bienvenue@shalayoga.fr" style="color:var(--color-sage);">bienvenue@shalayoga.fr</a>
+          Le présent site internet est édité par :<br /><br />
+          Nom et Prénom : Montalcino Laetitia<br />
+          Statut juridique : Entrepreneur Individuel (EI)<br />
+          Adresse du studio : 19, rue Guignagault 45100 Orléans<br />
+          Numéro SIRET : 107 638 611 000 15<br />
+          Adresse e-mail : <a href="mailto:bienvenue@shalayoga.fr" style="color:var(--color-sage);">bienvenue@shalayoga.fr</a><br />
+          TVA non applicable, article 293 B du Code Général des Impôts (CGI)
         </p>
 
-        <h3>Hébergement</h3>
+        <h3>2. Directeur de la publication</h3>
         <p>
-          Ce site est hébergé sur les serveurs de GitHub Pages / Netlify / Vercel (selon la configuration choisie).
+          Le Directeur de la publication du site est Laetitia Montalcino, en sa qualité de dirigeant.
         </p>
 
-        <h3>Propriété intellectuelle</h3>
+        <h3>3. Hébergeur du site</h3>
         <p>
-          L'ensemble des contenus présents sur ce site (textes, images, logo, design) sont la propriété exclusive
-          de Shala Yoga. Toute reproduction, même partielle, est interdite sans autorisation écrite préalable.
+          Le site est hébergé par la société :<br /><br />
+          Nom de l'hébergeur : OVH<br />
+          Raison sociale : OVH SAS<br />
+          Siège social : 2 rue Kellermann 59100 Roubaix
         </p>
 
-        <h3>Données personnelles</h3>
+        <h3>4. Propriété intellectuelle</h3>
         <p>
-          Shala Yoga collecte uniquement les informations strictement nécessaires à la gestion des inscriptions
-          (nom, prénom, e-mail, numéro de téléphone). Ces données ne sont jamais partagées avec des tiers.
-          Conformément au RGPD, vous disposez d'un droit d'accès, de rectification et de suppression
+          L'ensemble des contenus présents sur ce site (textes, images, logo, design) sont la propriété exclusive de Shala Yoga.
+          Toute reproduction, même partielle, est interdite sans autorisation écrite préalable.
+        </p>
+
+        <h3>5. Politique de confidentialité et RGPD</h3>
+        <p>
+          Responsable du traitement : Laetitia Montalcino.<br /><br />
+          Shala Yoga collecte uniquement les informations strictement nécessaires à la gestion des inscriptions (nom, prénom, e-mail, numéro de téléphone).
+          Ces données ne sont jamais partagées avec des tiers. Conformément au RGPD, vous disposez d'un droit d'accès, de rectification et de suppression
           en nous contactant à <a href="mailto:bienvenue@shalayoga.fr" style="color:var(--color-sage);">bienvenue@shalayoga.fr</a>.
         </p>
 
-        <h3>Cookies</h3>
+        <h3>6. Cookies</h3>
         <p>
           Ce site n'utilise aucun cookie de traçage ou publicitaire.
         </p>
 
-        <h3>Responsabilité</h3>
+        <h3>7. Responsabilité</h3>
         <p>
-          Shala Yoga s'efforce de fournir des informations exactes et à jour. Toutefois, le studio
-          ne saurait être tenu responsable des erreurs ou omissions, ni des dommages résultant
-          de l'utilisation de ce site.
+          Shala Yoga s'efforce de fournir des informations exactes et à jour. Toutefois, le studio ne saurait être tenu responsable des erreurs ou omissions,
+          ni des dommages résultant de l'utilisation de ce site.
         </p>
       </div>
     </div>
