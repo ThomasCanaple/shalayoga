@@ -463,10 +463,6 @@
       display: none;
     }
 
-    .hero__mobile-logo {
-      display: none;
-    }
-
     .btn-icon {
       width: 1.1em;
       height: 1.1em;
@@ -1231,16 +1227,6 @@
       /* Wrapper pour faire chevaucher logo entre image et encarts */
       .hero__visual {
         position: relative;
-      }
-
-      .hero__mobile-logo {
-        display: block;
-        width: 160px;
-        margin: 1rem auto;
-      }
-
-      .hero__visual::before {
-        content: none;
       }
 
       .hero__cards {
