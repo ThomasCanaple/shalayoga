@@ -1,4 +1,4 @@
-    /* =====================================================
+﻿    /* =====================================================
        RESET & BASE
     ===================================================== */
     *, *::before, *::after {
@@ -822,7 +822,7 @@
     }
 
     .tarif-card__feature::before {
-      content: '✓';
+      content: 'âœ“';
       color: var(--color-sage);
       font-weight: 700;
       flex-shrink: 0;
@@ -1054,7 +1054,7 @@
     }
 
     /* =====================================================
-       MENTIONS LÉGALES MODAL
+       MENTIONS LÃ‰GALES MODAL
     ===================================================== */
     .modal-overlay {
       display: none;
@@ -1204,10 +1204,6 @@
         gap: 3rem;
       }
 
-      .hero__visual {
-        order: -1;
-      }
-
       .hero__cards {
         flex-direction: row;
       }
@@ -1327,3 +1323,4 @@
         transform: none;
       }
     }
+
