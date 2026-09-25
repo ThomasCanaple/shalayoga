@@ -828,7 +828,7 @@
     }
 
     .tarif-card__feature::before {
-      content: 'âœ“';
+      content: '\2713';
       color: var(--color-sage);
       font-weight: 700;
       flex-shrink: 0;
