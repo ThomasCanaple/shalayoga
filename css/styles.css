@@ -28,7 +28,7 @@
       --shadow-md:         0 4px 20px rgba(181, 111, 111, 0.12);
       --shadow-lg:         0 8px 40px rgba(181, 111, 111, 0.16);
       --transition:        0.3s ease;
-      --nav-height:        72px;
+      --nav-height:        88px;
     }
 
     html {
@@ -62,16 +62,6 @@
     /* =====================================================
        TYPOGRAPHY HELPERS
     ===================================================== */
-    .section-label {
-      display: inline-block;
-      font-size: 0.7rem;
-      font-weight: 600;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      color: var(--color-sage);
-      margin-bottom: 0.75rem;
-    }
-
     .section-title {
       font-family: var(--font-serif);
       font-size: clamp(1.75rem, 4vw, 2.75rem);
@@ -172,24 +162,6 @@
       background-color: var(--color-warm-dark);
     }
 
-    .btn--sage {
-      background-color: var(--color-sage);
-      color: var(--color-white);
-    }
-
-    .btn--sage:hover {
-      background-color: var(--color-sage-dark);
-    }
-
-    .btn--warm {
-      background-color: var(--color-warm);
-      color: var(--color-white);
-    }
-
-    .btn--warm:hover {
-      background-color: var(--color-warm-dark);
-    }
-
     .btn--outline {
       background-color: transparent;
       color: var(--color-sage-dark);
@@ -239,7 +211,7 @@
       align-items: center;
       justify-content: space-between;
       width: 100%;
-      max-width: 1100px;
+      max-width: 1200px;
       margin-inline: auto;
       padding-inline: 1.5rem;
     }
@@ -270,8 +242,32 @@
       background-color: var(--color-bg-section);
     }
 
-    .nav__cta {
-      margin-left: 1rem;
+    .nav__contacts {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.5rem;
+      margin-left: 0.75rem;
+      flex-shrink: 0;
+    }
+
+    .nav__contact-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      color: var(--color-text-light);
+      font-size: 0.74rem;
+      white-space: nowrap;
+    }
+
+    .nav__contact-link:hover {
+      color: var(--color-sage-dark);
+    }
+
+    .nav__contact-link .btn-icon {
+      width: 0.9rem;
+      height: 0.9rem;
+      flex: 0 0 auto;
     }
 
     /* Hamburger */
@@ -327,6 +323,7 @@
       justify-content: center;
       gap: 1.5rem;
       padding: 2rem;
+      overflow-y: auto;
     }
 
     .nav__mobile.open {
@@ -338,6 +335,36 @@
       padding: 0.75rem 1.5rem;
     }
 
+    .nav__contact-details {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+      margin: -1rem 0 0;
+    }
+
+    .nav__email {
+      margin: 0;
+      color: var(--color-text-light);
+      font-size: 0.9rem;
+      text-align: center;
+    }
+
+    .nav__mobile .nav__contact-link {
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 1000px) {
+      .nav__links,
+      .nav__contacts {
+        display: none;
+      }
+
+      .nav__hamburger {
+        display: flex;
+      }
+    }
+
     /* =====================================================
        HERO SECTION
     ===================================================== */
@@ -345,7 +372,7 @@
       min-height: calc(100vh - var(--nav-height));
       display: flex;
       align-items: center;
-      padding-block: 4rem;
+      padding-block: 1.5rem 4rem;
       background: linear-gradient(135deg, var(--color-bg) 0%, #ece8df 50%, #e8eee6 100%);
       position: relative;
       overflow: hidden;
@@ -457,6 +484,10 @@
       color: var(--color-sage-dark);
       font-style: italic;
       margin-bottom: 2.25rem;
+    }
+
+    .hero__contact-actions {
+      display: none;
     }
 
     .hero__mobile-image {
@@ -713,6 +744,13 @@
       margin-bottom: 0;
     }
 
+    .planning__notice-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-top: 1rem;
+    }
+
     /* Tarifs */
     .formules__layout {
       display: grid;
@@ -882,6 +920,25 @@
       max-width: none;
     }
 
+    .process__step-contact {
+      display: grid;
+      gap: 0.25rem;
+      margin-bottom: 1rem;
+      color: var(--color-text);
+      font-size: 0.9rem;
+      line-height: 1.6;
+    }
+
+    .process__step-contact p {
+      margin: 0;
+    }
+
+    .process__step-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
     /* =====================================================
        LOCATION SECTION
     ===================================================== */
@@ -909,6 +966,7 @@
     }
 
     .location-card {
+      align-self: start;
       background: var(--color-white);
       border-radius: var(--radius-lg);
       padding: 2rem;
@@ -954,44 +1012,20 @@
     }
 
     /* =====================================================
-       CONTACT BAND
-    ===================================================== */
-    .contact-band {
-      background: var(--color-warm);
-      color: var(--color-white);
-      padding-block: 5rem;
-    }
-
-    .contact-band .section-title {
-      color: var(--color-white);
-    }
-
-    .contact-band .section-subtitle {
-      color: rgba(255, 255, 255, 0.82);
-    }
-
-    .contact-band__inner {
-      display: grid;
-      grid-template-columns: 1fr auto;
-      gap: 3rem;
-      align-items: center;
-    }
-
-    .contact-band__actions {
-      display: flex;
-      flex-direction: row;
-      gap: 1rem;
-      flex-shrink: 0;
-      flex-wrap: wrap;
-    }
-
-    /* =====================================================
        FOOTER
     ===================================================== */
     .footer {
       background-color: #2a2520;
       color: rgba(255, 255, 255, 0.65);
       padding-block: 3rem 2rem;
+    }
+
+    .footer__contact-btn {
+      background-color: var(--color-white);
+    }
+
+    .footer__contact-whatsapp {
+      border: 1.5px solid transparent;
     }
 
     .footer__grid {
@@ -1224,6 +1258,22 @@
         margin-bottom: 0;
       }
 
+      .hero__contact-actions {
+        display: flex;
+        gap: 0.75rem;
+        margin: 0.75rem 0 0.5rem;
+      }
+
+      .hero__contact-actions .btn {
+        flex: 1;
+        min-width: 0;
+        justify-content: center;
+        gap: 0.4rem;
+        padding: 0.65rem 0.5rem;
+        font-size: 0.8rem;
+        white-space: nowrap;
+      }
+
       /* Wrapper pour faire chevaucher logo entre image et encarts */
       .hero__visual {
         position: relative;
@@ -1235,19 +1285,6 @@
 
       .practice-card {
         flex: 1;
-      }
-
-      .contact-band__inner {
-        grid-template-columns: 1fr;
-        text-align: center;
-      }
-
-      .contact-band__actions {
-        justify-content: center;
-      }
-
-      .contact-band .section-subtitle {
-        margin-inline: auto;
       }
 
       .footer__grid {
@@ -1273,7 +1310,7 @@
 
     @media (max-width: 700px) {
       .nav__links,
-      .nav__cta {
+      .nav__contacts {
         display: none;
       }
 
