@@ -478,7 +478,6 @@
     }
 
     .hero__quote-author {
-      max-width: 52ch;
       text-align: right;
       font-size: 0.88rem;
       color: var(--color-sage-dark);
@@ -512,8 +511,12 @@
       line-height: 1.6;
       padding: 0.85rem 1rem;
       margin-bottom: 1.5rem;
-      max-width: 52ch;
       box-sizing: border-box;
+    }
+
+    .hero__announcement,
+    .hero__quote-author {
+      width: min(100%, 27.5rem);
     }
 
     .hero__visual {
