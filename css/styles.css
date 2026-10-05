@@ -55,6 +55,13 @@
       text-decoration: none;
     }
 
+    html[data-phone-contact-enabled="false"] a[href^="tel:"],
+    html[data-phone-contact-enabled="false"] a[href^="sms:"],
+    html[data-phone-contact-enabled="false"] a[href^="https://wa.me/"],
+    html[data-phone-contact-enabled="false"] [data-phone-contact] {
+      display: none !important;
+    }
+
     ul {
       list-style: none;
     }
