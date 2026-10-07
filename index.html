@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr" data-phone-contact-enabled="true">
+<html lang="fr" data-phone-contact-enabled="true" data-planning-enabled="false">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,7 +17,7 @@
   <link rel="manifest" href="/assets/site.webmanifest" />
   <title>Shala Yoga – Orléans Saint Marceau</title>
 
-  <link rel="stylesheet" href="css/styles.css?v=20261005" />
+  <link rel="stylesheet" href="css/styles.css?v=20261007" />
 </head>
 
 <body>
@@ -65,7 +65,7 @@
         <!-- Desktop links -->
         <ul class="nav__links" role="list">
           <li><a href="#accueil" class="nav__link active" aria-current="page">Accueil</a></li>
-          <li><a href="#planning" class="nav__link">Planning</a></li>
+          <li data-planning><a href="#planning" class="nav__link">Planning</a></li>
           <li><a href="#formules" class="nav__link">Nos formules</a></li>
           <li><a href="#venir" class="nav__link">Venir au studio</a></li>
           <li><a href="#reservation" class="nav__link">Réservation</a></li>
@@ -112,7 +112,7 @@
     <div class="nav__mobile" id="mobile-menu" role="dialog" aria-label="Menu de navigation mobile" aria-hidden="true">
       <ul role="list" style="display:flex;flex-direction:column;align-items:center;gap:0.75rem;width:100%">
         <li><a href="#accueil" class="nav__link" onclick="closeMobileMenu()">Accueil</a></li>
-        <li><a href="#planning" class="nav__link" onclick="closeMobileMenu()">Planning</a></li>
+        <li data-planning><a href="#planning" class="nav__link" onclick="closeMobileMenu()">Planning</a></li>
         <li><a href="#formules" class="nav__link" onclick="closeMobileMenu()">Nos formules</a></li>
         <li><a href="#venir" class="nav__link" onclick="closeMobileMenu()">Venir au studio</a></li>
         <li><a href="#reservation" class="nav__link" onclick="closeMobileMenu()">Réservation</a></li>
@@ -186,9 +186,9 @@
               <svg class="btn-icon" aria-hidden="true"><use href="#icon-whatsapp"/></svg> WhatsApp
             </a>
           </div>
-          <p class="hero__announcement">
+          <!-- <p class="hero__announcement">
             Le premier cours de <strong>Vinyasa Yoga</strong> aura lieu le <strong>dimanche 11 octobre</strong> à <strong>10h</strong>.
-          </p>
+          </p> -->
           <p class="hero__desc">
             « L'<strong>Ashtanga</strong> et le <strong>Vinyasa</strong> font parti de mon quotidien depuis plus de 10 ans.
             Je me suis formée afin de partager les bienfaits de ces pratiques qui permettent de renforcer et appaiser le corps et l'esprit.
@@ -592,7 +592,7 @@
           <div class="footer__col-title">Navigation</div>
           <ul class="footer__links" role="list">
             <li><a href="#accueil" class="footer__link">Accueil</a></li>
-            <li><a href="#planning" class="footer__link">Planning</a></li>
+            <li data-planning><a href="#planning" class="footer__link">Planning</a></li>
             <li><a href="#formules" class="footer__link">Nos formules</a></li>
             <li><a href="#venir" class="footer__link">Venir au studio</a></li>
             <li><a href="#reservation" class="footer__link">Réservation</a></li>

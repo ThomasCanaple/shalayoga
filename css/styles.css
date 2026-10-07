@@ -66,6 +66,12 @@
       list-style: none;
     }
 
+    html[data-planning-enabled="false"] #planning,
+    html[data-planning-enabled="false"] a[href="#planning"],
+    html[data-planning-enabled="false"] [data-planning] {
+      display: none !important;
+    }
+
     /* =====================================================
        TYPOGRAPHY HELPERS
     ===================================================== */
