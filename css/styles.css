@@ -91,6 +91,25 @@
       margin-bottom: 2.5rem;
     }
 
+    .about-quote {
+      max-width: 75ch;
+      padding: clamp(1.25rem, 3vw, 2rem);
+      border-left: 3px solid rgba(181, 111, 111, 0.35);
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 0 var(--radius) var(--radius) 0;
+    }
+
+    .about-quote__text p + p {
+      margin-top: 1.25rem;
+    }
+
+    .about-quote__author {
+      margin-top: 1.5rem;
+      text-align: right;
+      color: var(--color-sage-dark);
+      font-style: italic;
+    }
+
     /* =====================================================
        LAYOUT HELPERS
     ===================================================== */
@@ -1401,4 +1420,3 @@
         transform: none;
       }
     }
-
