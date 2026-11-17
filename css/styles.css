@@ -807,6 +807,10 @@
       gap: 1.5rem;
     }
 
+    .formules__layout .tarifs__grid > .tarif-card:last-child:nth-child(odd) {
+      grid-column: 1 / -1;
+    }
+
     .formules__photo-frame {
       margin: 0;
       border-radius: var(--radius-lg);
