@@ -265,6 +265,8 @@
       color: var(--color-text-light);
       padding: 0.5rem 0.875rem;
       border-radius: var(--radius);
+      display: inline-block;
+      text-align: center;
       transition: color var(--transition), background-color var(--transition);
     }
 
@@ -807,8 +809,8 @@
       gap: 1.5rem;
     }
 
-    .formules__layout .tarifs__grid > .tarif-card:last-child:nth-child(odd) {
-      grid-column: 1 / -1;
+    .formules__layout .tarifs__grid {
+      grid-auto-rows: 1fr;
     }
 
     .formules__photo-frame {
@@ -957,6 +959,10 @@
 
     .particuliers__grid {
       grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .particuliers__notice {
+      margin-top: 0.5rem;
     }
 
     .particuliers__actions {
@@ -1399,6 +1405,10 @@
 
       .particuliers__grid {
         grid-template-columns: 1fr;
+      }
+
+      .tarif-card__pack--spacer {
+        display: none;
       }
 
       .formules__photo {

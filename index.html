@@ -456,10 +456,14 @@
           <p>
             Les cours particuliers peuvent avoir lieu <strong>en français comme en anglais</strong>.
           </p>
-          <p>
-            Vous souhaitez un cours entre amies en dehors des heures de cours collectifs ? Nous pouvons privatiser le studio
-            ou je peux me déplacer dans un lieu à votre convenance. Pour un cours particulier en groupe, n'hésitez pas à me contacter pour un devis.
-          </p>
+          <aside class="planning__notice particuliers__notice" aria-label="Cours entre amies">
+            <div class="planning__notice-text">
+              <p>
+                Vous souhaitez un cours entre amies en dehors des heures de cours collectifs ? Nous pouvons privatiser le studio
+                ou je peux me déplacer dans un lieu à votre convenance. Pour un cours particulier en groupe, n'hésitez pas à me contacter pour un devis.
+              </p>
+            </div>
+          </aside>
         </div>
 
         <div class="tarifs__grid particuliers__grid" role="list" aria-labelledby="particuliers-title">
@@ -467,6 +471,7 @@
           <div class="tarif-card" role="listitem">
             <div class="tarif-card__name">Distanciel - 35 minutes</div>
             <div class="tarif-card__price">20 <span>€ / cours</span></div>
+            <div class="tarif-card__pack tarif-card__pack--spacer" aria-hidden="true">&nbsp;</div>
             <ul class="tarif-card__features" aria-label="Inclus dans cette formule">
               <li class="tarif-card__feature">En visio via Google Meet</li>
               <li class="tarif-card__feature">Idéal quand vous avez peu de temps</li>
